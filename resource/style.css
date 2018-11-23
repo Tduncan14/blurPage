@@ -25,6 +25,12 @@ body{
 
 }
 
+.showcase:hover .content{
+    filter:blur(2px);
+    -webkit-filter-blur:(2px);
+
+}
+
 .content{
  position: absolute;
  z-index:1;
@@ -35,6 +41,7 @@ body{
  width:300px;
  height:350px;
  text-align:center;
+transition:all 1000ms;
 }
 
 .content.logo{
@@ -44,10 +51,57 @@ body{
 }
 
 content.title{
+    font-size:2.2rem;
+    margin-top:1rem;
 
 }
 
 .content.text{
+    line-height:1.7;
+    margin-top:1rem;
+}
 
 
+.container{
+    max-width:960px;
+    margin:auto;
+    overflow:hidden;
+    padding:4rem 1rem;
+}
+
+.grid-3{
+ display:grid;
+ grid-gap:20px;
+ grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.grid-2{
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns:repeat(2,1fr) ;
+   
+   }
+
+.center{
+    text-align:center;
+    margin:auto;
+}
+.bg-light{
+    background: #f4f4f4;
+    color:#333;
+}
+
+.bg-dark{
+    background: #333;
+    color:#f4f4f4;
+}
+
+footer{
+    padding:2.2rem;
+
+}
+
+footer p{
+   margin:0;
 }
